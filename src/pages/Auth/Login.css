@@ -1,0 +1,65 @@
+#login {
+  width: 100%;
+  height: 100%;
+  color: black;
+  margin: auto;
+}
+.error-txt {
+  margin: 5px 0px;
+  color: rgb(223, 52, 52) !important;
+  font-size: 16px !important;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid gray;
+  box-sizing: border-box;
+}
+
+#loginbutton {
+  background-color: #203a43;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.loginBtn {
+  width: 100%;
+  height: 43px;
+  border: 0;
+  color: white;
+  font-size: 16px;
+  border-radius: 0.25rem;
+}
+
+#login,
+#signup {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+#login > div {
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 100px;
+  height: auto;
+  position: relative;
+}
+#login input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 30px;
+  border: 1px solid white;
+}

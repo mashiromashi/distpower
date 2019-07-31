@@ -1,0 +1,26 @@
+div.realTimeAncillaryServicesPrices div.c3{
+    margin: 0 -20px -20px -20px;
+}
+div.realTimeAncillaryServicesPrices .c3-axis-y-label,
+div.realTimeAncillaryServicesPrices .c3-axis-y2-label {
+    fill: #076ee8;
+    font-size: 9px;
+}
+
+div.realTimeAncillaryServicesPrices .c3-axis-x-label{
+    fill : #076ee8;
+    font-size: 12px;
+}
+
+div.realTimeAncillaryServicesPrices .c3-axis tspan {
+    fill: #535353;
+    font-size: 10px;
+}
+div.realTimeAncillaryServicesPrices g.c3-axis-x g.tick tspan{
+    font-weight: lighter;
+    fill: black;
+    font-size: 8px;
+}
+div.realTimeAncillaryServicesPrices .regionX{
+    fill : red;
+}

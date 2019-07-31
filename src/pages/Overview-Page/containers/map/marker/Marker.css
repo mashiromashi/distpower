@@ -1,0 +1,31 @@
+.Marker{
+    border-radius: 50%;
+    cursor: pointer; 
+    width: 1em;
+    height: auto;
+    font-size: 2vh;
+}
+.Marker:hover{
+    font-size: 4vh;
+}
+.standbyInMarket{
+    color: red;
+    /* background-color: #0000a0; */
+    background-color: #bcff40;
+}
+.standbyOffMarket{
+    color: red;
+    background-color: black;
+ }
+.activated{
+    color: #00ff00;
+    background-color: #006400;
+}
+.alerts{
+    color: red;
+    background-color: rgba(255, 0, 0, 0.445);
+}
+.offline{
+    color: white;
+    background-color: black;
+}

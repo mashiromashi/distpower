@@ -1,0 +1,45 @@
+div.OverviewPage div.col-md-3 div.card h5.card-title{
+    color : #0080c0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    white-space: normal;
+    word-break: break-all;
+    font-size: 1.5vh;
+}
+div.OverviewPage div.col-md-3 div.card div.c3{
+    /* height: 100%; */
+    height: 22vh;
+    max-height: none !important;
+}
+
+div.OverviewPage div.col-md-9{
+    padding-left: 0;
+}
+
+div.OverviewPage div.col-md-9 div.card div.c3{
+    max-height: none !important;
+    /* min-height: 22vh; */
+    height: 14vh;
+}
+div.OverviewPage div.card div.c3 g.c3-axis-y tspan,
+div.OverviewPage div.card div.c3 g.c3-axis-y2 tspan,
+div.OverviewPage div.card div.c3 g.c3-axis-x tspan{
+    font-size: 1vh;
+    fill: black;
+    font-weight: bold;
+}
+
+div.OverviewPage div.col-md-3 div.card div.c3 g.c3-axis text
+{
+    font-size: 1.5vh !important;
+}
+
+#google-map-holder  div.map{
+    width: 98.5% !important;
+    height: 78.5% !important;
+}
+
+div.OverviewPage>div.col-lg-3>div.card{
+    /* width:80%; */
+}

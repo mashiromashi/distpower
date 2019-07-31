@@ -1,0 +1,13 @@
+div.SiteControlPage div.LeftComponent {
+  border: 2px solid;
+  height: 94vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+div.SiteControlPage div.RightComponent {
+  border: 2px solid;
+  height: 94vh;
+}
+div.SiteControlPage div.LeftComponent tr {
+  line-height: 2.7vh;
+}

@@ -1,0 +1,43 @@
+.header>div{
+  border: 1px solid #1166d4;
+  white-space: nowrap;
+  text-align: center;
+  /* line-height: 48px; */
+  height: 5vh;
+  line-height: 5vh;
+  font-weight: bold;
+  font-size: 2vh;
+}
+div.header > div:last-child{
+  background-image: url('../../assets/img/sunseap.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+div.dropdown:hover{
+  cursor: pointer;
+  background-color:#17a2b8 ;
+  color: white;
+  font-weight: bold;
+}
+/* ul.dropdown-menu{
+  padding: 0px;
+  margin: 3px -15px;
+  border-radius: 0;
+  text-align: center;
+  width: 100%;
+} */
+ul.dropdown-menu{
+  width:100%;
+  margin-top: 0px;
+  margin-left: -15px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0px;
+  font-size: 2vh;
+}
+ul.dropdown-menu li:hover,ul.dropdown-menu li a:hover,ul.dropdown-menu li a:active{
+  background-color: #17a2b8;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,9 @@
+div.SiteControlPage>div:first-child tbody{
+    font-size: 12px;
+}
+div.SiteControlPage div.LeftComponent>div.table-responsive-sm{
+    margin-bottom: -15px;
+}
+/* div.SiteControlPage div.LeftComponent>.table-striped tbody tr:nth-of-type(odd){
+
+} */

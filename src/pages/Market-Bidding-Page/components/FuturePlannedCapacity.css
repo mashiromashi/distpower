@@ -1,0 +1,23 @@
+div.Market-bidding-page div.flexContainer{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: space-between;
+}
+div.Market-bidding-page div.flexContainer div.flexItem{
+    border: 1px solid black;
+    flex-grow: 1;
+    flex-basis: 20%;
+    background: white;
+    margin:1px;
+}
+div.Market-bidding-page div.flexContainer div.flexItem div.flexItemDate{
+    background: #e3d51c;
+    border: 1px solid black;
+    margin: 1px ;
+    line-height: 20px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}

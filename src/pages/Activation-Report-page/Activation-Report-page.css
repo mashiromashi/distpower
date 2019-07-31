@@ -1,0 +1,44 @@
+div.activationReport .card-columns {   
+      column-count: 2;    
+      /* column-gap: 0; */
+}
+div.activationReport .card{
+    font-size: 2vh;
+}
+div.activationReport  .card-header{
+    font-weight: bolder;
+    color: #fff;
+    line-height: 3px;
+}
+div.activationReport .card-body{
+    padding: 5px !important;   
+}
+div.activationReport div.gaugeChart div.card-body{
+    height: 185px;
+}
+
+div.activationReport>div:first-child div.card{
+    /* height: 30vh; */
+}
+
+@media only screen and (max-width: 990px) {
+    div.activationReport .card-columns {   
+        column-count: 1;    
+        }
+}
+div.activationReport .card-columns>.card{
+    margin-bottom: 2vh !important;
+    /* margin-bottom: 2vh !important; */
+}
+div.activationReport>div>div.card{
+    margin-top:5vh !important;
+}
+/* .card-columns>.card,div.activationReport .card{
+    margin-bottom: 7vh !important;
+} */
+div.activationReport .circleButton{
+    /* border-radius: 50%; */
+} 
+div.activationReport .react-bootstrap-daterangepicker-container{
+    width: 100%;
+}

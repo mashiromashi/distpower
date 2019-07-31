@@ -1,0 +1,29 @@
+div.OverviewPageOnedataChart div.c3 {
+  margin: 0 -20px -20px -20px;
+  position: relative;
+}
+div.OverviewPageOnedataChart div.card-body {
+  padding-top: 1px;
+  padding-left: 1px;
+}
+div.OverviewPageOnedataChart .c3-axis-y-label,
+div.OverviewPageOnedataChart .c3-axis-x-label {
+  fill: #076ee8;
+  font-size: 12px;
+}
+
+div.OverviewPageOnedataChart .c3-axis tspan {
+  fill: #6a628b;
+  font-weight: bold;
+  font-size: 12px;
+}
+/* div.OverviewPageOnedataChart g.c3-axis-x g.tick tspan{
+    font-weight: lighter;
+    fill: black;
+    font-size: 8px;
+} */
+div.OverviewPageOnedataChart g.c3-xgrid-lines g.c3-xgrid-line > line {
+  stroke: #bbb128;
+  stroke-width: 1vh;
+  stroke-opacity: 0.7;
+}

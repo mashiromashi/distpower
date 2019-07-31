@@ -1,0 +1,39 @@
+div.lineChart div.c3{
+    margin: 0 -20px -20px -20px;
+}
+div.lineChart div.card-body{
+    padding-top: 1px;
+    padding-left:5px;
+    padding-right: 40px;
+}
+div.lineChart .c3-axis-y-label,
+div.lineChart .c3-axis-x-label{
+    fill: #076ee8;
+    font-size: 12px;
+}
+
+div.lineChart .c3-axis tspan {
+    fill: #6a628b;
+    font-weight: bold;
+    font-size: 12px;
+}
+/* div.lineChart g.c3-axis-x g.tick tspan{
+    font-weight: lighter;
+    fill: black;
+    font-size: 8px;
+} */
+div.lineChart g.c3-xgrid-lines g.c3-xgrid-line>line{
+    stroke: #bbb128;
+    stroke-width: 5px;  
+    stroke-opacity: 0.7;
+}
+/* div.lineChart div.c3 path{
+    stroke : white;
+} */
+div.gaugeChart .c3-gauge-value{
+}
+div.gaugeChart .c3-chart-arcs-gauge-min,div.gaugeChart .c3-chart-arcs-gauge-max
+{
+   font-size: 15px;
+   font-weight: bold;
+}

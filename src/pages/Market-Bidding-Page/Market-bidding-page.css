@@ -1,0 +1,51 @@
+div.Market-bidding-page div.card div.card-header{
+    color : black;
+    font-weight: 100;
+    font-size: 2vh;
+    padding: 1vh;
+}
+
+div.Market-bidding-page .hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+div.Market-bidding-page .thumbnail {
+    padding: 0;
+}
+
+div.Market-bidding-page .carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+div.table div.card-body{
+    padding: 0px;
+}
+
+/* for line chart */
+div.Market-bidding-page div.lineChart div.c3{
+    max-height: none !important;
+    height: 20vh;
+}
+div.Market-bidding-page div.lineChart div.c3 g.c3-axis-x tspan,
+div.Market-bidding-page div.lineChart div.c3 g.c3-axis-y tspan{
+    font-size: 1vh;
+    fill : black;
+    font-weight: bold;
+}
+
+div.Market-bidding-page div.lineChart div.c3 .c3-axis-y-label,
+div.Market-bidding-page div.lineChart div.c3 .c3-axis-x-label{
+    font-size: initial;
+}
+/* for options */
+div.Market-bidding-page div.options div.Optionsform div.col-lg-2{
+    font-size: 2vh;
+}
+
+div.Market-bidding-page div.options div.Optionsformrow div.row *{
+    height: 5vh;
+    font-size: 2vh;
+    text-align: center;
+}

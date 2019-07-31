@@ -1,0 +1,27 @@
+.Searchbox{
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 50px;
+    width: 450px;
+}
+.Searchbox .dropdown-menu{
+    /* width: 420px;*/
+    height: 450px; 
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.Searchbox .tableInMap td{
+    border: none;
+}
+
+@media screen and (max-width:800px) {
+    .Searchbox{
+        width: 250px;
+        top: 10px;
+    }
+    .Searchbox .dropdown-menu{
+        width: 300px;
+        overflow: auto;
+    }
+}
