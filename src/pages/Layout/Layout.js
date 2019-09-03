@@ -39,20 +39,20 @@ class Layout extends React.Component {
       userData: props.userData
     };
 
-    this.appLogout = this.appLogout.bind(this);
+    // this.appLogout = this.appLogout.bind(this);
   }
 
   // setTimeout = () => {
   //   this.warnTimeout = setTimeout(this.warn(), tokenExpiry - 1140000);
   // };
 
-  appLogout() {
-    alert("Please login again for the account has reached the time limit");
-    sessionStorage.removeItem("userJwt");
-    sessionStorage.removeItem("userRole");
-    sessionStorage.removeItem("tokenExpiry");
-    window.location.pathname = "/login";
-  }
+  // appLogout() {
+  //   alert("Please login again for the account has reached the time limit");
+  //   sessionStorage.removeItem("userJwt");
+  //   sessionStorage.removeItem("userRole");
+  //   sessionStorage.removeItem("tokenExpiry");
+  //   window.location.pathname = "/login";
+  // }
 
   logout() {
     let confirmLogout = window.confirm("Are you sure you want to logout ?");
@@ -82,12 +82,12 @@ class Layout extends React.Component {
       this.setState({ dropdownText: text });
     });
     // this.setTimeout();
-    setTimeout(() => {
-      alert("You will be logged out automatically in exactly 1 minute ");
-    }, 1140000);
-    setTimeout(() => {
-      this.appLogout();
-    }, 1200000);
+    // setTimeout(() => {
+    //   alert("You will be logged out automatically in exactly 1 minute ");
+    // }, 1140000);
+    // setTimeout(() => {
+    //   this.appLogout();
+    // }, 1200000);
   }
 
   render() {
