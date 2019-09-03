@@ -42,7 +42,7 @@ class LeftCom extends Component {
   async _apiFetch() {
     await fetch(
       `${api_url}/v1/data/generator-info?timestamp=${moment(new Date()).format(
-        "YYYY-MM-DD_hh:mm:ss.SSS"
+        "YYYY-MM-DD_HH:mm:ss.SSS"
       )}`,
       {
         headers: {
@@ -55,6 +55,8 @@ class LeftCom extends Component {
         if (res.ok) return res.json();
       })
       .then(data => {
+        console.log(data);
+
         this.setState({
           generatorId: data.data.generatorId,
           guage: data.data.guage,
@@ -83,12 +85,13 @@ class LeftCom extends Component {
           sysStatusRemote: data.data.system_status[0].remote_byPass_maintenence
         });
       });
+    console.log(this.state);
   }
 
   _getAllGenerators = () => {
     fetch(
       `${api_url}/v1/data/generator-info?timestamp=${moment(new Date()).format(
-        "YYYY-MM-DD_hh:mm:ss.SSS"
+        "YYYY-MM-DD_HH:mm:ss.SSS"
       )}`,
       {
         headers: {
@@ -105,7 +108,6 @@ class LeftCom extends Component {
 
         genList.push(data.data.generatorId);
         this.setState({ generatorList: genList });
-        console.log(this.state.generatorList);
       });
   };
 
@@ -164,11 +166,11 @@ class LeftCom extends Component {
             <tbody>
               <tr>
                 <th scope="row">Generator ID</th>
-                <td>{generatorId}</td>
+                <td>{generatorId ? generatorId : "N/A"}</td>
               </tr>
               <tr>
                 <th scope="row">Generator Name</th>
-                <td>{generatorName}</td>
+                <td>{generatorName ? generatorName : "N/A"}</td>
               </tr>
               {/* <tr>
                 <th scope="row">Address</th>
@@ -196,11 +198,13 @@ class LeftCom extends Component {
             <tbody>
               <tr>
                 <th scope="row">Main Breaker</th>
-                <td>{sysStatusMainBreaker}</td>
+                <td>{sysStatusMainBreaker ? sysStatusMainBreaker : "N/A"}</td>
               </tr>
               <tr>
                 <th scope="row">Remote/ByPass/Maintenance</th>
-                <td className="text-danger">{sysStatusRemote}</td>
+                <td className="text-danger">
+                  {sysStatusRemote ? sysStatusRemote : "N/A"}
+                </td>
               </tr>
             </tbody>
           </table>
@@ -216,15 +220,17 @@ class LeftCom extends Component {
             <tbody>
               <tr>
                 <th scope="row">Incoming Voltage (V)</th>
-                <td>{incPanelIncVoltage}</td>
+                <td>{incPanelIncVoltage ? incPanelIncVoltage : "N/A"}</td>
               </tr>
-              <tr>
+              {/* <tr>
                 <th scope="row"> Grid Frequency (Hz)</th>
-                <td>{incPanelGridFrequency}</td>
-              </tr>
+                <td>{incPanelGridFrequency ? incPanelGridFrequency : "N/A"}</td>
+              </tr> */}
               <tr>
                 <th scope="row">Inverters</th>
-                <td>{incPanelInverterStatus}</td>
+                <td>
+                  {incPanelInverterStatus ? incPanelInverterStatus : "N/A"}
+                </td>
               </tr>
             </tbody>
           </table>
@@ -241,11 +247,15 @@ class LeftCom extends Component {
             <tbody>
               <tr>
                 <th scope="row"> REMU </th>
-                <td>{standByGen_remu}</td>
+                <td>{standByGen_remu ? standByGen_remu : "N/A"}</td>
               </tr>
               <tr>
                 <th scope="row"> Start/Running/Stop </th>
-                <td>{standByGen_start_running_stop}</td>
+                <td>
+                  {standByGen_start_running_stop
+                    ? standByGen_start_running_stop
+                    : "N/A"}
+                </td>
               </tr>
               <tr>
                 <th scope="row"> Gen Running (RMP) </th>
@@ -269,13 +279,15 @@ class LeftCom extends Component {
               </tr>
               <tr>
                 <th scope="row">Fuel Status (F/3Q/H/1Q/E)</th>
-                <td className="text-danger">{standByGen_fuel_status}</td>
+                <td className="text-danger">
+                  {standByGen_fuel_status ? standByGen_fuel_status : "N/A"}
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div className="table-responsive-sm">
+        {/* <div className="table-responsive-sm">
           <table className="table table-sm table-striped">
             <thead className="bg-primary text-white">
               <tr>
@@ -298,7 +310,7 @@ class LeftCom extends Component {
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> */}
       </div>
     );
   }
